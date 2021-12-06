@@ -43,10 +43,10 @@ case 6:
 	System.out.println("Harry Potter and the Half-Blood Prince");
 	break;
 case 7:
-	System.out.println("Harry Potter and the Deathly Hallows – Part 1");
+	System.out.println("Harry Potter and the Deathly Hallows â€“ Part 1");
 	break;
 case 8:
-	System.out.println("Harry Potter and the Deathly Hallows – Part 2");
+	System.out.println("Harry Potter and the Deathly Hallows â€“ Part 2");
 	break;
 default:
 	System.out.println("Sorry!! Movie number does not exists");
@@ -67,44 +67,26 @@ else {
 //[AVERAGE] Keep getting input from user and print the name of the movie
 //till the user enters an invalid input.
 //Scanner input1=new Scanner(System.in);
+
+
+String moviename[]= {"Harry Potter and the Philosopher's Stone","Harry Potter and the Chamber of Secrets","Harry Potter and the Prisoner of Azkaban","Harry Potter and the Goblet of Fire","Harry Potter and the Order of the Phoenix","Harry Potter and the Half-Blood Prince","Harry Potter and the Deathly Hallows â€“ Part 1","Harry Potter and the Deathly Hallows â€“ Part 2"};
 for(movieno=1;movieno<=8;movieno++) {
 	System.out.println("5.Enter the movie number");
-	movieno= input.nextInt();
-	switch(movieno)
+	movieno= input.nextInt(); 
+	//0
+	if(movieno>=1 && movieno<=8 && !(movieno==0) )//1=1 
 	{
-	case 1:
-		System.out.println("Harry Potter and the Philosopher's Stone");
+		System.out.println("Input is " +movieno +" Movie Name is "  +moviename[movieno-1]);
+	}
+	else //0
+	{
+		System.out.println("Invalid Movie Number");
 		break;
-	case 2:
-		System.out.println("Harry Potter and the Chamber of Secrets\n");
-		break;
-	case 3:
-		System.out.println("Harry Potter and the Prisoner of Azkaban");
-		break;
-	case 4:
-		System.out.println("Harry Potter and the Goblet of Fire");
-		break;
-	case 5:
-		System.out.println("Harry Potter and the Order of the Phoenix");
-		break;
-	case 6:
-		System.out.println("Harry Potter and the Half-Blood Prince");
-		break;
-	case 7:
-		System.out.println("Harry Potter and the Deathly Hallows – Part 1");
-		break;
-	case 8:
-		System.out.println("Harry Potter and the Deathly Hallows – Part 2");
-		break;
-	default:
-		System.out.println("Sorry!! Movie number does not exists");
-		break;
-	} // end of switch
-//input.close();
+	}
 }
 
 //System.out.println(" 6. Store all the data into respective arrays");
-String moviename[]= {"Harry Potter and the Philosopher's Stone","Harry Potter and the Chamber of Secrets","Harry Potter and the Prisoner of Azkaban","Harry Potter and the Goblet of Fire","Harry Potter and the Order of the Phoenix","Harry Potter and the Half-Blood Prince","Harry Potter and the Deathly Hallows – Part 1","Harry Potter and the Deathly Hallows – Part 2"};
+//String moviename[]= {"Harry Potter and the Philosopher's Stone","Harry Potter and the Chamber of Secrets","Harry Potter and the Prisoner of Azkaban","Harry Potter and the Goblet of Fire","Harry Potter and the Order of the Phoenix","Harry Potter and the Half-Blood Prince","Harry Potter and the Deathly Hallows â€“ Part 1","Harry Potter and the Deathly Hallows â€“ Part 2"};
 int movieno1[]= {1,2,3,4,5,6,7,8};
 int releaseyr1[]= {2001,2002,2004,2005,2007,2009,2010,2011};
 
